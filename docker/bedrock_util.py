@@ -9,7 +9,7 @@ from langchain.prompts import PromptTemplate
 def bedrock_chain():
     bedrock_runtime = boto3.client(
         service_name="bedrock-runtime",
-        region_name="us-east-1",
+        region_name="us-west-2",
     )
 
     titan_llm = Bedrock(
